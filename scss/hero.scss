@@ -1,0 +1,74 @@
+.hero {
+  padding: 120px 0 100px;
+}
+
+.hero--wrapper {
+  font-size: 2.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-left {
+  padding-right: 30px;
+}
+
+.house-img {
+
+  & path {
+    opacity: 0;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.house-img--active {
+  opacity: 1 !important;
+}
+
+
+.hero--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &>*:not(:last-child) {
+    margin-bottom: 110px;
+  }
+}
+
+.hero--counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--title {
+  font-family: $BebasNeue;
+  @include fontSWLC (0.9459em, 400, 1.1891, $braum);
+  text-transform: uppercase;
+}
+
+.hero--arrow {
+  cursor: pointer;
+  width: 32px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.hero--value {
+  font-family: $BebasNeue;
+  display: block;
+  margin: 35px 0;
+  @include fontSWLC (2.5em, 700, 1, $braum);
+}
+
+.hero--button {
+  @include fontSWLC (0.432em, 400, 1.19, $whiteFont);
+  padding: 16px 36px;
+  background: $blue;
+  border: none;
+  border-radius: 6px;
+}

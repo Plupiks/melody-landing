@@ -1,0 +1,6 @@
+@mixin fontSWLC ($fontSize, $fontWeigth, $lineHeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fontWeigth;
+  line-height: $lineHeight;
+  color: $color;
+}
