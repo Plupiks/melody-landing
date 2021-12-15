@@ -14,6 +14,6 @@ floors.forEach(e => {
     floorActive.classList.add("house-img--active");
 
     var floorCount = e.target.dataset.floor;
-    if (floorCount) floorCountNumb.textContent = floorCount;
+    floorCountNumb.textContent = floorCount;
   })
 })
